@@ -15,5 +15,7 @@ int main()
     printf("**&p: %d\n", **&p);
     printf("3**p: %d\n", 3**p);
     printf("**&p + 4: %d\n", **&p + 4);
+
+    printf("%x %d %d %d %d\n", p,*p+2,**&p,3**p,**&p+4);
     return 0;
 }
