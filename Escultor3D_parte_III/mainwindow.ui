@@ -1,0 +1,1863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>983</width>
+    <height>734</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::DefaultContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	background-color: rgb(155, 0, 255);
+}
+
+QMenuBar{
+	background-color: rgb(155, 0, 255);
+}
+
+QToolBar{
+	background-color: rgb(120, 0, 255);
+	color: rgb(0, 0, 0);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="maximumSize">
+    <size>
+     <width>1300</width>
+     <height>990</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color: rgb(155, 0, 255);
+}
+
+</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_9">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="30,5,65">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QGroupBox" name="groupBoxCor">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QGroupBox{
+	background-color: rgb(120, 0, 255);
+	border: 1px solid purple;
+	border-radius: 6px;
+}
+</string>
+          </property>
+          <property name="title">
+           <string>Cor</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_16">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_15" stretch="30,70">
+             <item>
+              <widget class="SelecaoCor" name="CurrentColor" native="true">
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="10,40,20">
+                 <item>
+                  <widget class="QLabel" name="label_11">
+                   <property name="styleSheet">
+                    <string notr="true">QLabel{
+	background-color: rgb(120, 0, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>R</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="horizontalR">
+                   <property name="styleSheet">
+                    <string notr="true">QSlider{
+	background-color: rgb(120, 0, 255);
+}
+
+QSlider::handle:horizontal {
+   background: rgb(155, 0, 255);
+	border: 1px solid purple;
+	border-radius: 6px;
+}
+
+QSlider::add-page:horizontal {
+	background-color: rgb(120, 0, 255);
+}
+QSlider::sub-page:horizontal {
+   background: rgb(155, 0, 255);
+height: 6px;
+border-radius: 12px;
+}
+</string>
+                   </property>
+                   <property name="maximum">
+                    <number>255</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLCDNumber" name="lcdNumberR">
+                   <property name="maximumSize">
+                    <size>
+                     <width>80</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Ubuntu</family>
+                     <pointsize>12</pointsize>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLCDNumber{
+	background-color: rgb(120, 0, 255);
+}</string>
+                   </property>
+                   <property name="digitCount">
+                    <number>3</number>
+                   </property>
+                   <property name="segmentStyle">
+                    <enum>QLCDNumber::Flat</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_12" stretch="10,40,20">
+                 <property name="spacing">
+                  <number>7</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="label_12">
+                   <property name="styleSheet">
+                    <string notr="true">QLabel{
+	background-color: rgb(120, 0, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>G</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="horizontalG">
+                   <property name="styleSheet">
+                    <string notr="true">QSlider{
+	background-color: rgb(120, 0, 255);
+}
+
+QSlider::handle:horizontal {
+   background: rgb(155, 0, 255);
+	border: 1px solid purple;
+	border-radius: 6px;
+}
+
+QSlider::add-page:horizontal {
+	background-color: rgb(120, 0, 255);
+}
+QSlider::sub-page:horizontal {
+   background: rgb(155, 0, 255);
+height: 6px;
+border-radius: 12px;
+}
+</string>
+                   </property>
+                   <property name="maximum">
+                    <number>255</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLCDNumber" name="lcdNumberG">
+                   <property name="maximumSize">
+                    <size>
+                     <width>80</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLCDNumber{
+	background-color: rgb(120, 0, 255);
+}</string>
+                   </property>
+                   <property name="digitCount">
+                    <number>3</number>
+                   </property>
+                   <property name="segmentStyle">
+                    <enum>QLCDNumber::Flat</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_13" stretch="10,40,20">
+                 <property name="spacing">
+                  <number>7</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="label_13">
+                   <property name="styleSheet">
+                    <string notr="true">QLabel{
+	background-color: rgb(120, 0, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>B</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="horizontalB">
+                   <property name="styleSheet">
+                    <string notr="true">QSlider{
+	background-color: rgb(120, 0, 255);
+}
+
+QSlider::handle:horizontal {
+   background: rgb(155, 0, 255);
+	border: 1px solid purple;
+	border-radius: 6px;
+}
+
+QSlider::add-page:horizontal {
+	background-color: rgb(120, 0, 255);
+}
+QSlider::sub-page:horizontal {
+   background: rgb(155, 0, 255);
+height: 6px;
+border-radius: 12px;
+}
+</string>
+                   </property>
+                   <property name="maximum">
+                    <number>255</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLCDNumber" name="lcdNumberB">
+                   <property name="maximumSize">
+                    <size>
+                     <width>80</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLCDNumber{
+	background-color: rgb(120, 0, 255);
+}</string>
+                   </property>
+                   <property name="digitCount">
+                    <number>3</number>
+                   </property>
+                   <property name="segmentStyle">
+                    <enum>QLCDNumber::Flat</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_14" stretch="10,40,20">
+                 <property name="spacing">
+                  <number>7</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="label_14">
+                   <property name="styleSheet">
+                    <string notr="true">QLabel{
+	background-color: rgb(120, 0, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>A</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="horizontalA">
+                   <property name="styleSheet">
+                    <string notr="true">QSlider{
+	background-color: rgb(120, 0, 255);
+}
+
+QSlider::handle:horizontal {
+   background: rgb(155, 0, 255);
+	border: 1px solid purple;
+	border-radius: 6px;
+}
+
+QSlider::add-page:horizontal {
+	background-color: rgb(120, 0, 255);
+}
+QSlider::sub-page:horizontal {
+   background: rgb(155, 0, 255);
+height: 6px;
+border-radius: 12px;
+}
+</string>
+                   </property>
+                   <property name="maximum">
+                    <number>255</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="invertedAppearance">
+                    <bool>false</bool>
+                   </property>
+                   <property name="invertedControls">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLCDNumber" name="lcdNumberA">
+                   <property name="maximumSize">
+                    <size>
+                     <width>80</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLCDNumber{
+	background-color: rgb(120, 0, 255);
+}</string>
+                   </property>
+                   <property name="digitCount">
+                    <number>3</number>
+                   </property>
+                   <property name="segmentStyle">
+                    <enum>QLCDNumber::Flat</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBoxCaixa">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QGroupBox{
+	background-color: rgb(120, 0, 255);
+	border: 1px solid purple;
+	border-radius: 6px;
+}
+</string>
+          </property>
+          <property name="title">
+           <string>Caixa</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="10,40,20">
+               <item>
+                <widget class="QLabel" name="label_5">
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	background-color: rgb(120, 0, 255);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>DimX</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="horizontalDimXCaixa">
+                 <property name="styleSheet">
+                  <string notr="true">QSlider{
+	background-color: rgb(120, 0, 255);
+}
+
+QSlider::handle:horizontal {
+   background: rgb(155, 0, 255);
+	border: 1px solid purple;
+	border-radius: 6px;
+}
+
+QSlider::add-page:horizontal {
+	background-color: rgb(120, 0, 255);
+}
+QSlider::sub-page:horizontal {
+   background: rgb(155, 0, 255);
+height: 6px;
+border-radius: 12px;
+}
+</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLCDNumber" name="lcdNumberDimXCaixa">
+                 <property name="maximumSize">
+                  <size>
+                   <width>80</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLCDNumber{
+	background-color: rgb(120, 0, 255);
+}</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="digitCount">
+                  <number>3</number>
+                 </property>
+                 <property name="segmentStyle">
+                  <enum>QLCDNumber::Flat</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="10,40,20">
+               <item>
+                <widget class="QLabel" name="label_6">
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	background-color: rgb(120, 0, 255);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>DimY</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="horizontalDimYCaixa">
+                 <property name="styleSheet">
+                  <string notr="true">QSlider{
+	background-color: rgb(120, 0, 255);
+}
+
+QSlider::handle:horizontal {
+   background: rgb(155, 0, 255);
+	border: 1px solid purple;
+	border-radius: 6px;
+}
+
+QSlider::add-page:horizontal {
+	background-color: rgb(120, 0, 255);
+}
+QSlider::sub-page:horizontal {
+   background: rgb(155, 0, 255);
+height: 6px;
+border-radius: 12px;
+}
+</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLCDNumber" name="lcdNumberDimYCaixa">
+                 <property name="maximumSize">
+                  <size>
+                   <width>80</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLCDNumber{
+	background-color: rgb(120, 0, 255);
+}</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="digitCount">
+                  <number>3</number>
+                 </property>
+                 <property name="segmentStyle">
+                  <enum>QLCDNumber::Flat</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="10,40,20">
+               <item>
+                <widget class="QLabel" name="label_7">
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	background-color: rgb(120, 0, 255);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>DimZ</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="horizontalDimZCaixa">
+                 <property name="styleSheet">
+                  <string notr="true">QSlider{
+	background-color: rgb(120, 0, 255);
+}
+
+QSlider::handle:horizontal {
+   background: rgb(155, 0, 255);
+	border: 1px solid purple;
+	border-radius: 6px;
+}
+
+QSlider::add-page:horizontal {
+	background-color: rgb(120, 0, 255);
+}
+QSlider::sub-page:horizontal {
+   background: rgb(155, 0, 255);
+height: 6px;
+border-radius: 12px;
+}
+</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLCDNumber" name="lcdNumberDimZCaixa">
+                 <property name="maximumSize">
+                  <size>
+                   <width>80</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLCDNumber{
+	background-color: rgb(120, 0, 255);
+}</string>
+                 </property>
+                 <property name="digitCount">
+                  <number>3</number>
+                 </property>
+                 <property name="segmentStyle">
+                  <enum>QLCDNumber::Flat</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBoxEllipsoid">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QGroupBox{
+	background-color: rgb(120, 0, 255);
+	border: 1px solid purple;
+	border-radius: 6px;
+}
+</string>
+          </property>
+          <property name="title">
+           <string>Elipsoide</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="10,40,20">
+               <property name="spacing">
+                <number>7</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label_2">
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	background-color: rgb(120, 0, 255);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Rx</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="horizontalRaioXEllipsoid">
+                 <property name="styleSheet">
+                  <string notr="true">QSlider{
+	background-color: rgb(120, 0, 255);
+}
+
+QSlider::handle:horizontal {
+   background: rgb(155, 0, 255);
+	border: 1px solid purple;
+	border-radius: 6px;
+}
+
+QSlider::add-page:horizontal {
+	background-color: rgb(120, 0, 255);
+}
+QSlider::sub-page:horizontal {
+   background: rgb(155, 0, 255);
+height: 6px;
+border-radius: 12px;
+}
+</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLCDNumber" name="lcdNumberRaioXElipse">
+                 <property name="maximumSize">
+                  <size>
+                   <width>80</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLCDNumber{
+	background-color: rgb(120, 0, 255);
+}</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="digitCount">
+                  <number>3</number>
+                 </property>
+                 <property name="segmentStyle">
+                  <enum>QLCDNumber::Flat</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="10,40,20">
+               <property name="spacing">
+                <number>7</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label_4">
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	background-color: rgb(120, 0, 255);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Ry</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="horizontalRaioYEllipsoid">
+                 <property name="styleSheet">
+                  <string notr="true">QSlider{
+	background-color: rgb(120, 0, 255);
+}
+
+QSlider::handle:horizontal {
+   background: rgb(155, 0, 255);
+	border: 1px solid purple;
+	border-radius: 6px;
+}
+
+QSlider::add-page:horizontal {
+	background-color: rgb(120, 0, 255);
+}
+QSlider::sub-page:horizontal {
+   background: rgb(155, 0, 255);
+height: 6px;
+border-radius: 12px;
+}
+</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLCDNumber" name="lcdNumberRaioYElipse">
+                 <property name="maximumSize">
+                  <size>
+                   <width>80</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLCDNumber{
+	background-color: rgb(120, 0, 255);
+}</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="digitCount">
+                  <number>3</number>
+                 </property>
+                 <property name="segmentStyle">
+                  <enum>QLCDNumber::Flat</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="10,40,20">
+               <property name="spacing">
+                <number>7</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label_3">
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	background-color: rgb(120, 0, 255);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Rz</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="horizontalRaioZEllipsoid">
+                 <property name="styleSheet">
+                  <string notr="true">QSlider{
+	background-color: rgb(120, 0, 255);
+}
+
+QSlider::handle:horizontal {
+   background: rgb(155, 0, 255);
+	border: 1px solid purple;
+	border-radius: 6px;
+}
+
+QSlider::add-page:horizontal {
+	background-color: rgb(120, 0, 255);
+}
+QSlider::sub-page:horizontal {
+   background: rgb(155, 0, 255);
+height: 6px;
+border-radius: 12px;
+}
+</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLCDNumber" name="lcdNumberRaioZElipse">
+                 <property name="maximumSize">
+                  <size>
+                   <width>80</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLCDNumber{
+	background-color: rgb(120, 0, 255);
+}</string>
+                 </property>
+                 <property name="digitCount">
+                  <number>3</number>
+                 </property>
+                 <property name="segmentStyle">
+                  <enum>QLCDNumber::Flat</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBoxEsfera">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QGroupBox{
+	background-color: rgb(120, 0, 255);
+	border: 1px solid purple;
+	border-radius: 6px;
+}
+</string>
+          </property>
+          <property name="title">
+           <string>Esfera</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout" stretch="10,40,20">
+             <property name="spacing">
+              <number>7</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	background-color: rgb(120, 0, 255);
+}</string>
+               </property>
+               <property name="text">
+                <string>Raio</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalRaioEsfera">
+               <property name="styleSheet">
+                <string notr="true">QSlider{
+	background-color: rgb(120, 0, 255);
+}
+
+QSlider::handle:horizontal {
+   background: rgb(155, 0, 255);
+	border: 1px solid purple;
+	border-radius: 6px;
+}
+
+QSlider::add-page:horizontal {
+	background-color: rgb(120, 0, 255);
+}
+QSlider::sub-page:horizontal {
+   background: rgb(155, 0, 255);
+height: 6px;
+border-radius: 12px;
+}
+</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdNumberRaioEsfera">
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLCDNumber{
+	background-color: rgb(120, 0, 255);
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="digitCount">
+                <number>3</number>
+               </property>
+               <property name="segmentStyle">
+                <enum>QLCDNumber::Flat</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBoxPlanos">
+          <property name="font">
+           <font>
+            <family>Ubuntu</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QGroupBox{
+	background-color: rgb(120, 0, 255);
+	border: 1px solid purple;
+	border-radius: 6px;
+}
+</string>
+          </property>
+          <property name="title">
+           <string>Planos</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="10,40,20">
+             <property name="spacing">
+              <number>7</number>
+             </property>
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_19">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	background-color: rgb(120, 0, 255);
+}</string>
+               </property>
+               <property name="text">
+                <string>Z</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalZ">
+               <property name="styleSheet">
+                <string notr="true">QSlider{
+	background-color: rgb(120, 0, 255);
+}
+
+QSlider::handle:horizontal {
+   background: rgb(155, 0, 255);
+	border: 1px solid purple;
+	border-radius: 6px;
+}
+
+QSlider::add-page:horizontal {
+	background-color: rgb(120, 0, 255);
+}
+QSlider::sub-page:horizontal {
+   background: rgb(155, 0, 255);
+height: 6px;
+border-radius: 12px;
+}
+</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdNumberZ">
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLCDNumber{
+	background-color: rgb(120, 0, 255);
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="digitCount">
+                <number>3</number>
+               </property>
+               <property name="segmentStyle">
+                <enum>QLCDNumber::Flat</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="Plotter" name="widget" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>555555</width>
+          <height>555555</height>
+         </size>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>983</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <addaction name="actionFechar"/>
+    <addaction name="actionSalvar"/>
+    <addaction name="actionLimpar_Escultor"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionEscultor"/>
+   <addaction name="actionPutVoxel"/>
+   <addaction name="actionCutVoxel"/>
+   <addaction name="actionPutBox"/>
+   <addaction name="actionCutBox"/>
+   <addaction name="actionPutSphere"/>
+   <addaction name="actionCutSphere"/>
+   <addaction name="actionPutEllipsoid"/>
+   <addaction name="actionCutEllipsoid"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionEscultor">
+   <property name="text">
+    <string>Dimensões</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionFechar">
+   <property name="text">
+    <string>Fechar</string>
+   </property>
+  </action>
+  <action name="actionPutVoxel">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>PutVoxel</string>
+   </property>
+  </action>
+  <action name="actionCutVoxel">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>CutVoxel</string>
+   </property>
+  </action>
+  <action name="actionPutBox">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>PutBox</string>
+   </property>
+  </action>
+  <action name="actionCutBox">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>CutBox</string>
+   </property>
+  </action>
+  <action name="actionPutSphere">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>PutSphere</string>
+   </property>
+  </action>
+  <action name="actionCutSphere">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>CutSphere</string>
+   </property>
+  </action>
+  <action name="actionPutEllipsoid">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>PutEllipsoid</string>
+   </property>
+  </action>
+  <action name="actionCutEllipsoid">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>CutEllipsoid</string>
+   </property>
+  </action>
+  <action name="actionSalvar">
+   <property name="text">
+    <string>Salvar</string>
+   </property>
+   <property name="toolTip">
+    <string>Salva o escultor no formato .off</string>
+   </property>
+  </action>
+  <action name="actionLimpar_Escultor">
+   <property name="text">
+    <string>Limpar Escultor</string>
+   </property>
+  </action>
+  <action name="actionAbrir_Arquivo">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Abrir Arquivo</string>
+   </property>
+   <property name="toolTip">
+    <string>Abre um arquivo .OFF</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Plotter</class>
+   <extends>QWidget</extends>
+   <header>plotter.h</header>
+   <container>1</container>
+   <slots>
+    <slot>alteraCor()</slot>
+    <slot>mudaB(int)</slot>
+    <slot>mudaG(int)</slot>
+    <slot>salvaEscultor()</slot>
+    <slot>executaGeomview()</slot>
+    <slot>limpaEscultor()</slot>
+    <slot>set_r(int)</slot>
+    <slot>mudaR(int)</slot>
+    <slot>mudaA(int)</slot>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>SelecaoCor</class>
+   <extends>QWidget</extends>
+   <header location="global">selecaocor.h</header>
+   <container>1</container>
+   <slots>
+    <slot>set_r(int)</slot>
+    <slot>set_g(int)</slot>
+    <slot>set_b(int)</slot>
+    <slot>set_a(int)</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>horizontalRaioEsfera</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberRaioEsfera</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>580</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>282</x>
+     <y>584</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalRaioXEllipsoid</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberRaioXElipse</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>432</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>281</x>
+     <y>436</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalRaioYEllipsoid</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberRaioYElipse</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>463</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>281</x>
+     <y>467</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalRaioZEllipsoid</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberRaioZElipse</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>494</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>281</x>
+     <y>498</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalDimXCaixa</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberDimXCaixa</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>292</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>281</x>
+     <y>296</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalDimYCaixa</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberDimYCaixa</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>323</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>281</x>
+     <y>327</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalDimZCaixa</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberDimZCaixa</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>354</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>281</x>
+     <y>358</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalR</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberR</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>175</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>280</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalG</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberG</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>209</x>
+     <y>151</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>280</x>
+     <y>155</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalB</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberB</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>209</x>
+     <y>182</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>280</x>
+     <y>186</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalZ</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberZ</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>665</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>282</x>
+     <y>669</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionFechar</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>630</x>
+     <y>375</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPutVoxel</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>capturaAcao(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>630</x>
+     <y>375</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCutVoxel</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>capturaAcao(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>630</x>
+     <y>375</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPutBox</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>capturaAcao(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>630</x>
+     <y>375</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCutBox</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>capturaAcao(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>630</x>
+     <y>375</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPutSphere</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>capturaAcao(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>630</x>
+     <y>375</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCutSphere</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>capturaAcao(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>630</x>
+     <y>375</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPutEllipsoid</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>capturaAcao(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>630</x>
+     <y>375</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCutEllipsoid</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>capturaAcao(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>630</x>
+     <y>375</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalG</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>widget</receiver>
+   <slot>mudaG(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>209</x>
+     <y>151</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>753</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalB</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>widget</receiver>
+   <slot>mudaB(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>209</x>
+     <y>182</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>668</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSalvar</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>widget</receiver>
+   <slot>salvaEscultor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>753</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionLimpar_Escultor</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>widget</receiver>
+   <slot>limpaEscultor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>753</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalR</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>CurrentColor</receiver>
+   <slot>set_r(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>210</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>71</x>
+     <y>130</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalG</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>CurrentColor</receiver>
+   <slot>set_g(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>209</x>
+     <y>151</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>79</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalB</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>CurrentColor</receiver>
+   <slot>set_b(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>209</x>
+     <y>182</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>75</x>
+     <y>148</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalA</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumberA</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>204</x>
+     <y>204</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>280</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalA</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>CurrentColor</receiver>
+   <slot>set_a(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>181</x>
+     <y>209</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>99</x>
+     <y>219</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalR</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>widget</receiver>
+   <slot>mudaR(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>210</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>433</x>
+     <y>130</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalA</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>widget</receiver>
+   <slot>mudaA(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>160</x>
+     <y>208</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>373</x>
+     <y>262</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>capturaAcao(bool)</slot>
+ </slots>
+</ui>
